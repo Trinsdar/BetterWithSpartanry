@@ -128,7 +128,7 @@ public class ItemRegistryBWSpartanry {
             }
             if (!ConfigHandler.disableLongbow && !ConfigHandler.woodenLongbowOnly) {
                 ItemSpartanBMLongbow longbow = new ItemSpartanBMLongbow("longbow_" + mat.getName(), mat);
-                ModelRenderRegistry.addItemToRegistry(longbow, new ResourceLocation(SpartanBM.MODID, "longbow_custom"), utils.spartanMatFromMMDMat(mat));
+                ModelRenderRegistry.addItemToRegistry(longbow, new ResourceLocation(SpartanBM.MODID, "longbow_custom"), utils.spartanMatFromToolMat(mat));
                 item_set.add(longbow);
             }
             if (!ConfigHandler.disableCrossbow && !ConfigHandler.woodenCrossbowOnly) {
